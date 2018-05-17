@@ -1,0 +1,12 @@
+module data(
+	input ck,sw
+	output reg [17:0]led
+);
+
+always@(posedge ck)
+begin
+	led[17:1] <= led[16:0];
+	led[0] <= sw;
+end
+
+endmodule

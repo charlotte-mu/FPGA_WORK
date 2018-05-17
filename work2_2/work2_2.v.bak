@@ -1,0 +1,45 @@
+module work2_2(
+	input [2:0]s,
+	input [7:0]sw,
+	output reg led
+);
+
+always@(*)
+begin
+	case(s[2])
+		1'b0:
+			case(s[1])
+				1'b0:
+					case(s[0])
+						1'b0:
+							led = sw[0];
+						1'b1:
+							led = sw[1];
+					endcase
+				1'b1:
+					case(s[0])
+						1'b0:
+							led = sw[2];
+						1'b1:
+							led = sw[3];
+			endcase
+		1'b1:
+			case(s[1])
+				1'b0:
+					case(s[0])
+						1'b0:
+							led = sw[4];
+						1'b1:
+							led = sw[5];
+					endcase
+				1'b1:
+					case(s[0])
+						1'b0:
+							led = sw[6];
+						1'b1:
+							led = sw[7];
+			endcase
+	endcase
+end
+
+endmodule

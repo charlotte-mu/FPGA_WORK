@@ -1,0 +1,10 @@
+module top(
+	input [1:0]dp,
+	output led
+);
+
+
+
+assign led = dp[0] and dp[1];
+
+endmodule

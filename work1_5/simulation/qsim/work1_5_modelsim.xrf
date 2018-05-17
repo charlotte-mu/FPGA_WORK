@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/FPGA_WORK/work1_5/top.v
+source_file = 1, D:/FPGA_WORK/work1_5/Waveform.vwf
+source_file = 1, D:/FPGA_WORK/work1_5/db/work1_5.cbx.xml
+design_name = top
+instance = comp, \led~output , led~output, top, 1
+instance = comp, \dp[1]~input , dp[1]~input, top, 1
+instance = comp, \dp[2]~input , dp[2]~input, top, 1
+instance = comp, \led~0 , led~0, top, 1
+instance = comp, \dp[3]~input , dp[3]~input, top, 1
+instance = comp, \dp[4]~input , dp[4]~input, top, 1
+instance = comp, \dp[0]~input , dp[0]~input, top, 1
+instance = comp, \led~1 , led~1, top, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

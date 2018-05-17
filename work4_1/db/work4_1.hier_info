@@ -1,0 +1,95 @@
+|top
+ck => ck.IN1
+sw => sw.IN1
+db => db.IN1
+led[0] << data:add2.led
+led[1] << data:add2.led
+led[2] << data:add2.led
+led[3] << data:add2.led
+led[4] << data:add2.led
+led[5] << data:add2.led
+led[6] << data:add2.led
+led[7] << data:add2.led
+led[8] << data:add2.led
+led[9] << data:add2.led
+led[10] << data:add2.led
+led[11] << data:add2.led
+led[12] << data:add2.led
+led[13] << data:add2.led
+led[14] << data:add2.led
+led[15] << data:add2.led
+led[16] << data:add2.led
+led[17] << data:add2.led
+
+
+|top|conter:add1
+ck => data[0].CLK
+ck => data[1].CLK
+ck => data[2].CLK
+ck => data[3].CLK
+ck => data[4].CLK
+ck => data[5].CLK
+ck => data[6].CLK
+ck => data[7].CLK
+ck => data[8].CLK
+ck => data[9].CLK
+ck => data[10].CLK
+ck => data[11].CLK
+ck => data[12].CLK
+ck => data[13].CLK
+ck => data[14].CLK
+ck => data[15].CLK
+ck => data[16].CLK
+ck => data[17].CLK
+ck => data[18].CLK
+ck => data[19].CLK
+ck => data[20].CLK
+ck => data[21].CLK
+ck => data[22].CLK
+ck => data[23].CLK
+ck => data[24].CLK
+ck => clk~reg0.CLK
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|data:add2
+ck => led_[0].CLK
+ck => led_[1].CLK
+ck => led_[2].CLK
+ck => led_[3].CLK
+ck => led_[4].CLK
+ck => led_[5].CLK
+ck => led_[6].CLK
+ck => led_[7].CLK
+ck => led_[8].CLK
+ck => led_[9].CLK
+ck => led_[10].CLK
+ck => led_[11].CLK
+ck => led_[12].CLK
+ck => led_[13].CLK
+ck => led_[14].CLK
+ck => led_[15].CLK
+ck => led_[16].CLK
+ck => led_[17].CLK
+sw => led_.DATAA
+db => led_.OUTPUTSELECT
+led[0] <= led_[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= <GND>
+led[2] <= led_[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= <GND>
+led[4] <= led_[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= <GND>
+led[6] <= led_[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= <GND>
+led[8] <= led_[8].DB_MAX_OUTPUT_PORT_TYPE
+led[9] <= <GND>
+led[10] <= led_[10].DB_MAX_OUTPUT_PORT_TYPE
+led[11] <= <GND>
+led[12] <= led_[12].DB_MAX_OUTPUT_PORT_TYPE
+led[13] <= <GND>
+led[14] <= led_[14].DB_MAX_OUTPUT_PORT_TYPE
+led[15] <= <GND>
+led[16] <= led_[16].DB_MAX_OUTPUT_PORT_TYPE
+led[17] <= <GND>
+
+

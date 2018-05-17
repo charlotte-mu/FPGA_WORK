@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/FPGA_WORK/work3_1/work3_1.bdf
+source_file = 1, D:/FPGA_WORK/work3_1/Waveform.vwf
+source_file = 1, D:/FPGA_WORK/work3_1/db/work3_1.cbx.xml
+design_name = work3_1
+instance = comp, \q~output , q~output, work3_1, 1
+instance = comp, \cp~input , cp~input, work3_1, 1
+instance = comp, \r~input , r~input, work3_1, 1
+instance = comp, \s~input , s~input, work3_1, 1
+instance = comp, \inst~1 , inst~1, work3_1, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

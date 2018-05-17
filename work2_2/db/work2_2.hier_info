@@ -1,0 +1,19 @@
+|work2_2
+s[0] => led.OUTPUTSELECT
+s[0] => led.OUTPUTSELECT
+s[0] => led.OUTPUTSELECT
+s[0] => led.OUTPUTSELECT
+s[1] => led.OUTPUTSELECT
+s[1] => led.OUTPUTSELECT
+s[2] => led.OUTPUTSELECT
+sw[0] => led.DATAB
+sw[1] => led.DATAA
+sw[2] => led.DATAB
+sw[3] => led.DATAA
+sw[4] => led.DATAB
+sw[5] => led.DATAA
+sw[6] => led.DATAB
+sw[7] => led.DATAA
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/FPGA_WORK/work1/top.v
+source_file = 1, D:/FPGA_WORK/work1/db/work1.cbx.xml
+design_name = top
+instance = comp, \led~output , led~output, top, 1
+instance = comp, \dp[2]~input , dp[2]~input, top, 1
+instance = comp, \sw[1]~input , sw[1]~input, top, 1
+instance = comp, \dp[1]~input , dp[1]~input, top, 1
+instance = comp, \sw[0]~input , sw[0]~input, top, 1
+instance = comp, \dp[0]~input , dp[0]~input, top, 1
+instance = comp, \Mux0~0 , Mux0~0, top, 1
+instance = comp, \dp[3]~input , dp[3]~input, top, 1
+instance = comp, \Mux0~1 , Mux0~1, top, 1
