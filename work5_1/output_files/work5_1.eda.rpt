@@ -1,5 +1,5 @@
 EDA Netlist Writer report for work5_1
-Mon May 07 11:48:45 2018
+Sat May 19 16:35:33 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 07 11:48:45 2018 ;
+; EDA Netlist Writer Status ; Successful - Sat May 19 16:35:33 2018 ;
 ; Revision Name             ; work5_1                               ;
 ; Top-level Entity Name     ; work5_1                               ;
 ; Family                    ; Cyclone IV E                          ;
@@ -71,7 +71,7 @@ agreement for further details.
 +--------------------------------------------------+
 ; Generated Files                                  ;
 +--------------------------------------------------+
-; D:/FPGA_WORK/work5_1/simulation/qsim//work5_1.vo ;
+; E:/FPGA_WORK/work5_1/simulation/qsim//work5_1.vo ;
 +--------------------------------------------------+
 
 
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon May 07 11:48:44 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/FPGA_WORK/work5_1/simulation/qsim/ work5_1 -c work5_1
+    Info: Processing started: Sat May 19 16:35:32 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/FPGA_WORK/work5_1/simulation/qsim/ work5_1 -c work5_1
 Info (119006): Selected device EP4CE115F29C7 for design "work5_1"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file work5_1.vo in folder "D:/FPGA_WORK/work5_1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file work5_1.vo in folder "E:/FPGA_WORK/work5_1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 531 megabytes
-    Info: Processing ended: Mon May 07 11:48:45 2018
+    Info: Peak virtual memory: 4665 megabytes
+    Info: Processing ended: Sat May 19 16:35:33 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

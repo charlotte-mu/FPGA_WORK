@@ -1,5 +1,5 @@
 Analysis & Synthesis report for work5_1
-Mon May 07 11:48:10 2018
+Sat May 19 17:36:33 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 07 11:48:10 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 19 17:36:33 2018       ;
 ; Quartus Prime Version              ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                      ; work5_1                                     ;
 ; Top-level Entity Name              ; work5_1                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 17                                          ;
-;     Total combinational functions  ; 17                                          ;
-;     Dedicated logic registers      ; 7                                           ;
-; Total registers                    ; 7                                           ;
-; Total pins                         ; 9                                           ;
+; Total logic elements               ; 95                                          ;
+;     Total combinational functions  ; 95                                          ;
+;     Dedicated logic registers      ; 40                                          ;
+; Total registers                    ; 40                                          ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -151,16 +151,16 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -169,41 +169,42 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path     ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
-; work5_1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/work5_1/work5_1.bdf ;         ;
-; MUXA.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/work5_1/MUXA.bdf    ;         ;
+; work5_1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/FPGA_WORK/work5_1/work5_1.bdf ;         ;
+; clk.v                            ; yes             ; User Verilog HDL File              ; E:/FPGA_WORK/work5_1/clk.v       ;         ;
+; LED7.v                           ; yes             ; User Verilog HDL File              ; E:/FPGA_WORK/work5_1/LED7.v      ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 17     ;
-;                                             ;        ;
-; Total combinational functions               ; 17     ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 3      ;
-;     -- 3 input functions                    ; 3      ;
-;     -- <=2 input functions                  ; 11     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 17     ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 7      ;
-;     -- Dedicated logic registers            ; 7      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 9      ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; inst43 ;
-; Maximum fan-out                             ; 6      ;
-; Total fan-out                               ; 75     ;
-; Average fan-out                             ; 1.79   ;
-+---------------------------------------------+--------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 95       ;
+;                                             ;          ;
+; Total combinational functions               ; 95       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 26       ;
+;     -- 3 input functions                    ; 22       ;
+;     -- <=2 input functions                  ; 47       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 64       ;
+;     -- arithmetic mode                      ; 31       ;
+;                                             ;          ;
+; Total registers                             ; 40       ;
+;     -- Dedicated logic registers            ; 40       ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 24       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CK~input ;
+; Maximum fan-out                             ; 33       ;
+; Total fan-out                               ; 388      ;
+; Average fan-out                             ; 2.12     ;
++---------------------------------------------+----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,11 +212,9 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
-; |work5_1                   ; 17 (13)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |work5_1             ; work5_1     ; work         ;
-;    |MUXA:inst51|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|MUXA:inst51 ; MUXA        ; work         ;
-;    |MUXA:inst52|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|MUXA:inst52 ; MUXA        ; work         ;
-;    |MUXA:inst53|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|MUXA:inst53 ; MUXA        ; work         ;
-;    |MUXA:inst54|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|MUXA:inst54 ; MUXA        ; work         ;
+; |work5_1                   ; 95 (18)             ; 40 (7)                    ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |work5_1             ; work5_1     ; work         ;
+;    |LED7:inst29|           ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|LED7:inst29 ; LED7        ; work         ;
+;    |clk:inst26|            ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |work5_1|clk:inst26  ; clk         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -225,7 +224,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7     ;
+; Total registers                              ; 40    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 5     ;
@@ -240,19 +239,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 9                           ;
-; cycloneiii_ff         ; 7                           ;
+; boundary_port         ; 24                          ;
+; cycloneiii_ff         ; 40                          ;
 ;     CLR               ; 5                           ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 17                          ;
-;     normal            ; 17                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 3                           ;
+;     plain             ; 35                          ;
+; cycloneiii_lcell_comb ; 97                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 66                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 26                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.56                        ;
+; Max LUT depth         ; 4.30                        ;
+; Average LUT depth     ; 3.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -261,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -271,32 +273,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Mon May 07 11:47:59 2018
+    Info: Processing started: Sat May 19 17:36:17 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off work5_1 -c work5_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file work5_1.bdf
     Info (12023): Found entity 1: work5_1
-Info (12021): Found 1 design units, including 1 entities, in source file muxa.bdf
-    Info (12023): Found entity 1: MUXA
+Info (12021): Found 1 design units, including 1 entities, in source file clk.v
+    Info (12023): Found entity 1: clk File: E:/FPGA_WORK/work5_1/clk.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file led7.v
+    Info (12023): Found entity 1: LED7 File: E:/FPGA_WORK/work5_1/LED7.v Line: 1
 Info (12127): Elaborating entity "work5_1" for the top level hierarchy
-Warning (275011): Block or symbol "NOT" of instance "inst37" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst39" overlaps another block or symbol
-Info (12128): Elaborating entity "MUXA" for hierarchy "MUXA:inst52"
+Warning (275011): Block or symbol "NOT" of instance "inst24" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "101" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "106" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "110" overlaps another block or symbol
+Warning (275011): Block or symbol "AND2" of instance "inst68" overlaps another block or symbol
+Info (12128): Elaborating entity "clk" for hierarchy "clk:inst26"
+Info (12128): Elaborating entity "LED7" for hierarchy "LED7:inst29"
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "inst101" is converted into an equivalent circuit using register "inst101~_emulated" and latch "inst101~1"
-    Warning (13310): Register "inst7" is converted into an equivalent circuit using register "inst7~_emulated" and latch "inst101~1"
+    Warning (13310): Register "inst23" is converted into an equivalent circuit using register "inst23~_emulated" and latch "inst23~1"
+    Warning (13310): Register "inst7" is converted into an equivalent circuit using register "inst7~_emulated" and latch "inst23~1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "L1[1]" is stuck at GND
+    Warning (13410): Pin "L1[2]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 17 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 652 megabytes
-    Info: Processing ended: Mon May 07 11:48:10 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 95 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Sat May 19 17:36:33 2018
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 

@@ -48,10 +48,37 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name BDF_FILE work5_1.bdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE work5_1.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name BDF_FILE MUXA.bdf
+set_global_assignment -name VERILOG_FILE clk.v
+set_location_assignment PIN_Y2 -to CK
+set_global_assignment -name VERILOG_FILE LED7.v
+set_location_assignment PIN_AB28 -to ctrl
+set_location_assignment PIN_H22 -to L0[6]
+set_location_assignment PIN_J22 -to L0[5]
+set_location_assignment PIN_L25 -to L0[4]
+set_location_assignment PIN_L26 -to L0[3]
+set_location_assignment PIN_E17 -to L0[2]
+set_location_assignment PIN_F22 -to L0[1]
+set_location_assignment PIN_G18 -to L0[0]
+set_location_assignment PIN_U24 -to L1[6]
+set_location_assignment PIN_U23 -to L1[5]
+set_location_assignment PIN_W25 -to L1[4]
+set_location_assignment PIN_W22 -to L1[3]
+set_location_assignment PIN_W21 -to L1[2]
+set_location_assignment PIN_Y22 -to L1[1]
+set_location_assignment PIN_M24 -to L1[0]
+set_location_assignment PIN_E21 -to p
+set_location_assignment PIN_E22 -to r
+set_location_assignment PIN_M23 -to RE
+set_location_assignment PIN_F18 -to Q4
+set_location_assignment PIN_F21 -to Q3
+set_location_assignment PIN_E19 -to Q2
+set_location_assignment PIN_F19 -to Q1
+set_location_assignment PIN_G19 -to Q0
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

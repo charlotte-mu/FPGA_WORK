@@ -1,51 +1,92 @@
 |work5_1
 Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-ck => inst41.CLK
-ck => inst43.CLK
-ck => inst.CLK
-Q4 <= inst101.DB_MAX_OUTPUT_PORT_TYPE
-pr <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+r <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+CK => clk:inst26.ck
+Q3 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+p <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+RE => inst68.IN0
+RE => inst72.IN0
+Q4 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+ctrl => inst6.IN0
+ctrl => inst19.IN1
+ctrl => 109.IN2
+ctrl => 104.IN1
+ctrl => inst9.IN1
+ctrl => inst13.IN1
 Q2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-ctrl => MUXA:inst51.S
-ctrl => MUXA:inst52.S
-ctrl => inst45.IN0
-ctrl => MUXA:inst53.S
-ctrl => MUXA:inst54.S
-ctrl => inst31.IN1
 Q1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-Q3 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-cl <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+L0[6] <= LED7:inst29.L0[0]
+L0[5] <= LED7:inst29.L0[1]
+L0[4] <= LED7:inst29.L0[2]
+L0[3] <= LED7:inst29.L0[3]
+L0[2] <= LED7:inst29.L0[4]
+L0[1] <= LED7:inst29.L0[5]
+L0[0] <= LED7:inst29.L0[6]
+L1[6] <= LED7:inst29.L1[0]
+L1[5] <= LED7:inst29.L1[1]
+L1[4] <= LED7:inst29.L1[2]
+L1[3] <= LED7:inst29.L1[3]
+L1[2] <= LED7:inst29.L1[4]
+L1[1] <= LED7:inst29.L1[5]
+L1[0] <= LED7:inst29.L1[6]
 
 
-|work5_1|MUXA:inst52
-Y <= inst.DB_MAX_OUTPUT_PORT_TYPE
-B => 7.IN0
-S => 8.IN0
-S => 6.IN1
-A => 6.IN0
+|work5_1|clk:inst26
+ck => ck1~reg0.CLK
+ck => data[0].CLK
+ck => data[1].CLK
+ck => data[2].CLK
+ck => data[3].CLK
+ck => data[4].CLK
+ck => data[5].CLK
+ck => data[6].CLK
+ck => data[7].CLK
+ck => data[8].CLK
+ck => data[9].CLK
+ck => data[10].CLK
+ck => data[11].CLK
+ck => data[12].CLK
+ck => data[13].CLK
+ck => data[14].CLK
+ck => data[15].CLK
+ck => data[16].CLK
+ck => data[17].CLK
+ck => data[18].CLK
+ck => data[19].CLK
+ck => data[20].CLK
+ck => data[21].CLK
+ck => data[22].CLK
+ck => data[23].CLK
+ck => data[24].CLK
+ck => data[25].CLK
+ck => data[26].CLK
+ck => data[27].CLK
+ck => data[28].CLK
+ck => data[29].CLK
+ck => data[30].CLK
+ck => data[31].CLK
+ck1 <= ck1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|work5_1|MUXA:inst51
-Y <= inst.DB_MAX_OUTPUT_PORT_TYPE
-B => 7.IN0
-S => 8.IN0
-S => 6.IN1
-A => 6.IN0
-
-
-|work5_1|MUXA:inst53
-Y <= inst.DB_MAX_OUTPUT_PORT_TYPE
-B => 7.IN0
-S => 8.IN0
-S => 6.IN1
-A => 6.IN0
-
-
-|work5_1|MUXA:inst54
-Y <= inst.DB_MAX_OUTPUT_PORT_TYPE
-B => 7.IN0
-S => 8.IN0
-S => 6.IN1
-A => 6.IN0
+|work5_1|LED7:inst29
+Q0 => Decoder0.IN4
+Q1 => Decoder0.IN3
+Q2 => Decoder0.IN2
+Q3 => Decoder0.IN1
+Q4 => Decoder0.IN0
+L0[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+L0[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+L0[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+L0[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+L0[4] <= L0.DB_MAX_OUTPUT_PORT_TYPE
+L0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+L0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+L1[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+L1[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+L1[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+L1[3] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+L1[4] <= <GND>
+L1[5] <= <GND>
+L1[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 
 
