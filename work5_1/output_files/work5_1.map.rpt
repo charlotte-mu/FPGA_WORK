@@ -1,5 +1,5 @@
 Analysis & Synthesis report for work5_1
-Sat May 19 17:36:33 2018
+Thu May 24 09:36:08 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 19 17:36:33 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 24 09:36:08 2018       ;
 ; Quartus Prime Version              ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                      ; work5_1                                     ;
 ; Top-level Entity Name              ; work5_1                                     ;
@@ -151,16 +151,16 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-6         ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -169,9 +169,9 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path     ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
-; work5_1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/FPGA_WORK/work5_1/work5_1.bdf ;         ;
-; clk.v                            ; yes             ; User Verilog HDL File              ; E:/FPGA_WORK/work5_1/clk.v       ;         ;
-; LED7.v                           ; yes             ; User Verilog HDL File              ; E:/FPGA_WORK/work5_1/LED7.v      ;         ;
+; work5_1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/work5_1/work5_1.bdf ;         ;
+; clk.v                            ; yes             ; User Verilog HDL File              ; D:/FPGA_WORK/work5_1/clk.v       ;         ;
+; LED7.v                           ; yes             ; User Verilog HDL File              ; D:/FPGA_WORK/work5_1/LED7.v      ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------+---------+
 
 
@@ -263,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -273,16 +273,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Sat May 19 17:36:17 2018
+    Info: Processing started: Thu May 24 09:35:56 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off work5_1 -c work5_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file work5_1.bdf
     Info (12023): Found entity 1: work5_1
 Info (12021): Found 1 design units, including 1 entities, in source file clk.v
-    Info (12023): Found entity 1: clk File: E:/FPGA_WORK/work5_1/clk.v Line: 1
+    Info (12023): Found entity 1: clk File: D:/FPGA_WORK/work5_1/clk.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file led7.v
-    Info (12023): Found entity 1: LED7 File: E:/FPGA_WORK/work5_1/LED7.v Line: 1
+    Info (12023): Found entity 1: LED7 File: D:/FPGA_WORK/work5_1/LED7.v Line: 1
 Info (12127): Elaborating entity "work5_1" for the top level hierarchy
 Warning (275011): Block or symbol "NOT" of instance "inst24" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "101" overlaps another block or symbol
@@ -305,9 +305,9 @@ Info (21057): Implemented 119 device resources after synthesis - the final resou
     Info (21059): Implemented 21 output pins
     Info (21061): Implemented 95 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Sat May 19 17:36:33 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Thu May 24 09:36:08 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 
