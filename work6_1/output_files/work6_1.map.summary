@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Jun 10 19:12:29 2018
+Analysis & Synthesis Status : Successful - Mon Jun 11 09:29:53 2018
 Quartus Prime Version : 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 Revision Name : work6_1
 Top-level Entity Name : work6_1
 Family : Cyclone IV E
-Total logic elements : 82
-    Total combinational functions : 82
-    Dedicated logic registers : 38
-Total registers : 38
+Total logic elements : 26
+    Total combinational functions : 26
+    Dedicated logic registers : 5
+Total registers : 5
 Total pins : 20
 Total virtual pins : 0
 Total memory bits : 0

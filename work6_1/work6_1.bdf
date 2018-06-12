@@ -120,7 +120,7 @@ agreement for further details.
 	(output)
 	(rect 920 176 1096 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "L0[6..0]" (rect 90 0 127 12)(font "Arial" ))
+	(text "L0[0..6]" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -136,7 +136,7 @@ agreement for further details.
 	(output)
 	(rect 920 192 1096 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "L1[6..0]" (rect 90 0 127 12)(font "Arial" ))
+	(text "L1[0..6]" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))

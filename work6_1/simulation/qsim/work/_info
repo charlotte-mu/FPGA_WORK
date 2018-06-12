@@ -7,46 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/FPGA_WORK/work6_1/simulation/qsim
+dD:/FPGA_WORK/work6_1/simulation/qsim
 vwork6_1
-Z1 !s110 1528628989
+Z0 !s110 1528680632
 !i10b 1
 !s100 R1d46WNHzIn1L44ZZ=UjR0
 I2hR`e2]D]KbUFz4>2LzQR1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1528628988
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/User/Desktop/work6_1/simulation/qsim
+w1528628988
 8work6_1.vo
 Fwork6_1.vo
 L0 32
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1528628989.000000
+!s108 1528680631.000000
 !s107 work6_1.vo|
 !s90 -work|work|work6_1.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 vwork6_1_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 g0B5Dz^Li57ZzdMRTBgP01
 I;4]2j?Q=HVh:jXO;aE8;R2
+R1
 R2
-R0
-R3
+w1528680628
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 30
-R4
+R3
 r1
 !s85 0
 31
-R5
+!s108 1528680632.000000
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R6
-R7
+R4
+R5
