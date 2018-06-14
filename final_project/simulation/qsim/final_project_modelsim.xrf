@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/FPGA_WORK/final_project/8to1.bdf
+source_file = 1, D:/FPGA_WORK/final_project/final_project.bdf
+source_file = 1, D:/FPGA_WORK/final_project/LED7.v
+source_file = 1, D:/FPGA_WORK/final_project/2to1.bdf
+source_file = 1, D:/FPGA_WORK/final_project/fsm.bdf
+source_file = 1, D:/FPGA_WORK/final_project/Waveform.vwf
+source_file = 1, D:/FPGA_WORK/final_project/db/final_project.cbx.xml
+design_name = fsm
+instance = comp, \C~output , C~output, fsm, 1
+instance = comp, \A~output , A~output, fsm, 1
+instance = comp, \B~output , B~output, fsm, 1
+instance = comp, \ck~input , ck~input, fsm, 1
+instance = comp, \ctrl~input , ctrl~input, fsm, 1
+instance = comp, \inst4|inst2~0 , inst4|inst2~0, fsm, 1
+instance = comp, \inst2~0 , inst2~0, fsm, 1
+instance = comp, \inst100|inst2~0 , inst100|inst2~0, fsm, 1
