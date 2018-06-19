@@ -3,13 +3,22 @@ LEDG0 <= fsm:inst2.C
 clr => inst8.IN0
 stop => inst4.IN0
 ck => inst4.IN1
+ck => ck1:inst12.ck
 ctrl => fsm:inst2.ctrl
 LEDG1 <= fsm:inst2.B
 LEDG2 <= fsm:inst2.A
 LEDR0 <= 8to1:inst10.out
 SW2 => Lab1_2:inst9.A
+SW2 => inst1.IN0
+SW2 => work3_1:inst3.s
+SW2 => 4to1:inst11.S0
 SW3 => Lab1_2:inst9.B
+SW3 => inst1.IN1
+SW3 => work3_1:inst3.r
+SW3 => 4to1:inst11.S1
 SW4 => Lab1_2:inst9.C
+SW4 => inst1.IN2
+KEY1 => work3_1:inst3.cp
 L0[6] <= LED7:inst.L0[6]
 L0[5] <= LED7:inst.L0[5]
 L0[4] <= LED7:inst.L0[4]
@@ -101,6 +110,35 @@ C => inst3.IN2
 C => inst.IN1
 A => inst10.IN0
 A => inst.IN0
+
+
+|final_project|work3_1:inst3
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+r => inst6.IN0
+cp => inst66.IN0
+s => inst5.IN0
+
+
+|final_project|4to1:inst11
+out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+S0 => inst.IN0
+S0 => inst5.IN1
+S0 => inst3.IN1
+S1 => inst1.IN0
+S1 => inst4.IN2
+S1 => inst5.IN2
+C => inst4.IN0
+D => inst5.IN0
+B => inst3.IN0
+
+
+|final_project|ck1:inst12
+CK1 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+ck => inst.CLK
+Ck2 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+CK3 <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+CK4 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |final_project|LED7:inst
