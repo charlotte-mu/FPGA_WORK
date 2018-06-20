@@ -52,13 +52,6 @@ agreement for further details.
 		(text "L0[0..6]" (rect 93 27 123 39)(font "Arial" ))
 		(line (pt 144 32)(pt 128 32)(line_width 3))
 	)
-	(port
-		(pt 144 48)
-		(output)
-		(text "L1[0..6]" (rect 0 0 29 12)(font "Arial" ))
-		(text "L1[0..6]" (rect 94 43 123 55)(font "Arial" ))
-		(line (pt 144 48)(pt 128 48)(line_width 3))
-	)
 	(drawing
 		(rectangle (rect 16 16 128 96)(line_width 1))
 	)

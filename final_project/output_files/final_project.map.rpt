@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Tue Jun 19 10:43:42 2018
+Wed Jun 20 22:00:08 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -44,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 19 10:43:41 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 20 22:00:08 2018       ;
 ; Quartus Prime Version              ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                      ; final_project                               ;
 ; Top-level Entity Name              ; final_project                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 44                                          ;
-;     Total combinational functions  ; 44                                          ;
-;     Dedicated logic registers      ; 29                                          ;
-; Total registers                    ; 29                                          ;
-; Total pins                         ; 26                                          ;
+; Total logic elements               ; 201                                         ;
+;     Total combinational functions  ; 197                                         ;
+;     Dedicated logic registers      ; 96                                          ;
+; Total registers                    ; 96                                          ;
+; Total pins                         ; 57                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -152,16 +152,16 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -171,64 +171,81 @@ agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                 ; Library ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
 ; work3_1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/work3_1.bdf       ;         ;
-; 8to1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/8to1.bdf          ;         ;
+; clk.v                            ; yes             ; User Verilog HDL File              ; D:/FPGA_WORK/final_project/clk.v             ;         ;
 ; final_project.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/final_project.bdf ;         ;
 ; LED7.v                           ; yes             ; User Verilog HDL File              ; D:/FPGA_WORK/final_project/LED7.v            ;         ;
-; 2to1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/2to1.bdf          ;         ;
 ; fsm.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/fsm.bdf           ;         ;
 ; Lab1_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/Lab1_2.bdf        ;         ;
-; 4to1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/4to1.bdf          ;         ;
 ; ck1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/ck1.bdf           ;         ;
+; lab4.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/lab4.bdf          ;         ;
+; LED7_5bit.v                      ; yes             ; User Verilog HDL File              ; D:/FPGA_WORK/final_project/LED7_5bit.v       ;         ;
+; L10downto0.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/L10downto0.bdf    ;         ;
+; L8to1.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/L8to1.bdf         ;         ;
+; L2to1.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/L2to1.bdf         ;         ;
+; L4to1.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/L4to1.bdf         ;         ;
+; L4bit_add.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/FPGA_WORK/final_project/L4bit_add.bdf     ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 44             ;
-;                                             ;                ;
-; Total combinational functions               ; 44             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 9              ;
-;     -- 3 input functions                    ; 8              ;
-;     -- <=2 input functions                  ; 27             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 44             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 29             ;
-;     -- Dedicated logic registers            ; 29             ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 26             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; fsm:inst2|inst ;
-; Maximum fan-out                             ; 14             ;
-; Total fan-out                               ; 186            ;
-; Average fan-out                             ; 1.49           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 201   ;
+;                                             ;       ;
+; Total combinational functions               ; 197   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 72    ;
+;     -- 3 input functions                    ; 35    ;
+;     -- <=2 input functions                  ; 90    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 166   ;
+;     -- arithmetic mode                      ; 31    ;
+;                                             ;       ;
+; Total registers                             ; 96    ;
+;     -- Dedicated logic registers            ; 96    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 57    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; inst5 ;
+; Maximum fan-out                             ; 33    ;
+; Total fan-out                               ; 820   ;
+; Average fan-out                             ; 2.01  ;
++---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
-; |final_project             ; 44 (2)              ; 29 (0)                    ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |final_project                        ; final_project ; work         ;
-;    |8to1:inst10|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|8to1:inst10            ; 8to1          ; work         ;
-;    |LED7:inst|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|LED7:inst              ; LED7          ; work         ;
-;    |ck1:inst12|            ; 26 (26)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ck1:inst12             ; ck1           ; work         ;
-;    |fsm:inst2|             ; 3 (0)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2              ; fsm           ; work         ;
-;       |2to1:inst100|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|2to1:inst100 ; 2to1          ; work         ;
-;       |2to1:inst4|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|2to1:inst4   ; 2to1          ; work         ;
-;       |2to1:inst5|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|2to1:inst5   ; 2to1          ; work         ;
-;    |work3_1:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|work3_1:inst3          ; work3_1       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
+; |final_project             ; 197 (2)             ; 96 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |final_project                       ; final_project ; work         ;
+;    |L10downto0:inst37|     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L10downto0:inst37     ; L10downto0    ; work         ;
+;    |L4bit_add:inst39|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L4bit_add:inst39      ; L4bit_add     ; work         ;
+;    |L4to1:inst22|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L4to1:inst22          ; L4to1         ; work         ;
+;    |L8to1:inst30|          ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L8to1:inst30          ; L8to1         ; work         ;
+;    |L8to1:inst31|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L8to1:inst31          ; L8to1         ; work         ;
+;    |L8to1:inst32|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L8to1:inst32          ; L8to1         ; work         ;
+;    |L8to1:inst33|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L8to1:inst33          ; L8to1         ; work         ;
+;    |L8to1:inst34|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|L8to1:inst34          ; L8to1         ; work         ;
+;    |LED7:inst|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|LED7:inst             ; LED7          ; work         ;
+;    |LED7_5bit:inst23|      ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|LED7_5bit:inst23      ; LED7_5bit     ; work         ;
+;    |LED7_5bit:inst27|      ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|LED7_5bit:inst27      ; LED7_5bit     ; work         ;
+;    |ck1:inst12|            ; 26 (26)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ck1:inst12            ; ck1           ; work         ;
+;    |ck1:inst21|            ; 26 (26)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ck1:inst21            ; ck1           ; work         ;
+;    |clk:inst14|            ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|clk:inst14            ; clk           ; work         ;
+;    |fsm:inst2|             ; 4 (1)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2             ; fsm           ; work         ;
+;       |L2to1:inst3|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|L2to1:inst3 ; L2to1         ; work         ;
+;       |L2to1:inst4|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|L2to1:inst4 ; L2to1         ; work         ;
+;       |L2to1:inst5|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|fsm:inst2|L2to1:inst5 ; L2to1         ; work         ;
+;    |lab4:inst38|           ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|lab4:inst38           ; lab4          ; work         ;
+;    |work3_1:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|work3_1:inst3         ; work3_1       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -248,10 +265,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 29    ;
+; Total registers                              ; 96    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Clear ; 11    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -263,20 +280,22 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 26                          ;
-; cycloneiii_ff         ; 29                          ;
-;     CLR               ; 3                           ;
-;     plain             ; 26                          ;
-; cycloneiii_lcell_comb ; 47                          ;
-;     normal            ; 47                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 27                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 9                           ;
+; boundary_port         ; 57                          ;
+; cycloneiii_ff         ; 96                          ;
+;     CLR               ; 11                          ;
+;     plain             ; 85                          ;
+; cycloneiii_lcell_comb ; 203                         ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 172                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 58                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 72                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.40                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -285,7 +304,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -295,62 +314,76 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Tue Jun 19 10:43:30 2018
+    Info: Processing started: Wed Jun 20 21:59:53 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_project -c final_project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file work3_1.bdf
     Info (12023): Found entity 1: work3_1
 Info (12021): Found 1 design units, including 1 entities, in source file clk.v
     Info (12023): Found entity 1: clk File: D:/FPGA_WORK/final_project/clk.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file 8to1.bdf
-    Info (12023): Found entity 1: 8to1
 Info (12021): Found 1 design units, including 1 entities, in source file final_project.bdf
     Info (12023): Found entity 1: final_project
 Info (12021): Found 1 design units, including 1 entities, in source file led7.v
     Info (12023): Found entity 1: LED7 File: D:/FPGA_WORK/final_project/LED7.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file 2to1.bdf
-    Info (12023): Found entity 1: 2to1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.bdf
     Info (12023): Found entity 1: fsm
 Info (12021): Found 1 design units, including 1 entities, in source file lab1_2.bdf
     Info (12023): Found entity 1: Lab1_2
-Info (12021): Found 1 design units, including 1 entities, in source file 4to1.bdf
-    Info (12023): Found entity 1: 4to1
 Info (12021): Found 1 design units, including 1 entities, in source file ck1.bdf
     Info (12023): Found entity 1: ck1
+Info (12021): Found 1 design units, including 1 entities, in source file lab4.bdf
+    Info (12023): Found entity 1: lab4
+Info (12021): Found 1 design units, including 1 entities, in source file led7_5bit.v
+    Info (12023): Found entity 1: LED7_5bit File: D:/FPGA_WORK/final_project/LED7_5bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file l10downto0.bdf
+    Info (12023): Found entity 1: L10downto0
+Info (12021): Found 1 design units, including 1 entities, in source file l8to1.bdf
+    Info (12023): Found entity 1: L8to1
+Info (12021): Found 1 design units, including 1 entities, in source file l2to1.bdf
+    Info (12023): Found entity 1: L2to1
+Info (12021): Found 1 design units, including 1 entities, in source file l4to1.bdf
+    Info (12023): Found entity 1: L4to1
+Info (12021): Found 1 design units, including 1 entities, in source file l4bit_add.bdf
+    Info (12023): Found entity 1: L4bit_add
 Info (12127): Elaborating entity "final_project" for the top level hierarchy
+Warning (275008): Primitive "AND2" of instance "inst4" not used
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:inst2"
-Info (12128): Elaborating entity "2to1" for hierarchy "fsm:inst2|2to1:inst100"
+Info (12128): Elaborating entity "L2to1" for hierarchy "fsm:inst2|L2to1:inst3"
 Warning (275011): Block or symbol "NOT" of instance "inst3" overlaps another block or symbol
-Info (12128): Elaborating entity "8to1" for hierarchy "8to1:inst10"
+Info (12128): Elaborating entity "clk" for hierarchy "clk:inst14"
+Info (12128): Elaborating entity "L8to1" for hierarchy "L8to1:inst30"
 Warning (275011): Block or symbol "NOT" of instance "inst2" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst4" overlaps another block or symbol
 Info (12128): Elaborating entity "Lab1_2" for hierarchy "Lab1_2:inst9"
 Info (12128): Elaborating entity "work3_1" for hierarchy "work3_1:inst3"
-Info (12128): Elaborating entity "4to1" for hierarchy "4to1:inst11"
+Info (12128): Elaborating entity "L4to1" for hierarchy "L4to1:inst28"
 Info (12128): Elaborating entity "ck1" for hierarchy "ck1:inst12"
 Warning (275012): Pin "CK1" overlaps another pin, block, or symbol
+Info (12128): Elaborating entity "lab4" for hierarchy "lab4:inst38"
+Info (12128): Elaborating entity "L10downto0" for hierarchy "L10downto0:inst37"
+Warning (275011): Block or symbol "AND2" of instance "inst15" overlaps another block or symbol
+Warning (275011): Block or symbol "AND2" of instance "inst18" overlaps another block or symbol
+Info (12128): Elaborating entity "L4bit_add" for hierarchy "L4bit_add:inst39"
 Info (12128): Elaborating entity "LED7" for hierarchy "LED7:inst"
+Info (12128): Elaborating entity "LED7_5bit" for hierarchy "LED7_5bit:inst27"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer L4to1:inst22|inst6~0
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "L1[0]" is stuck at VCC
-    Warning (13410): Pin "L1[1]" is stuck at GND
-    Warning (13410): Pin "L1[2]" is stuck at GND
-    Warning (13410): Pin "L1[3]" is stuck at GND
-    Warning (13410): Pin "L1[4]" is stuck at GND
-    Warning (13410): Pin "L1[5]" is stuck at GND
-    Warning (13410): Pin "L1[6]" is stuck at GND
+    Warning (13410): Pin "4bit_L1[2]" is stuck at GND
+    Warning (13410): Pin "4bit_L1[1]" is stuck at GND
+    Warning (13410): Pin "5bit_L1[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 44 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Tue Jun 19 10:43:42 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 201 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Wed Jun 20 22:00:08 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:34
 
 

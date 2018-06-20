@@ -22,6 +22,9 @@ run -all
 quit -f
 
 
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -40,6 +43,9 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
 
 
 </modelsim_script_timing>
@@ -110,7 +116,7 @@ SIGNAL("C")
 	PARENT = "";
 }
 
-SIGNAL("ck")
+SIGNAL("CK")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -120,19 +126,19 @@ SIGNAL("ck")
 	PARENT = "";
 }
 
-SIGNAL("ctrl")
+SIGNAL("D")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
 GROUP("Q")
 {
-	MEMBERS = "A", "B", "C";
+	MEMBERS = "A", "B", "C", "D";
 }
 
 TRANSITION_LIST("A")
@@ -162,7 +168,7 @@ TRANSITION_LIST("C")
 	}
 }
 
-TRANSITION_LIST("ck")
+TRANSITION_LIST("CK")
 {
 	NODE
 	{
@@ -176,19 +182,18 @@ TRANSITION_LIST("ck")
 	}
 }
 
-TRANSITION_LIST("ctrl")
+TRANSITION_LIST("D")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 460.0;
-		LEVEL 1 FOR 540.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ck";
+	CHANNEL = "CK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -197,51 +202,52 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "ctrl";
-	EXPAND_STATUS = COLLAPSED;
+	CHANNEL = "Q";
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Q";
-	EXPAND_STATUS = EXPANDED;
-	RADIX = Unsigned;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 0;
-	CHILDREN = 3, 4, 5;
+	CHILDREN = 2, 3, 4, 5;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 3;
+	RADIX = Binary;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 4;
+	RADIX = Binary;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "C";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "D";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 2;
+	PARENT = 1;
 }
 
 TIME_BAR

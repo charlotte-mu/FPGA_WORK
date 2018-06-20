@@ -8,45 +8,111 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/FPGA_WORK/final_project/simulation/qsim
+v\10downto0 
+!s110 1529500191
+!i10b 1
+!s100 ]0E3B0d:3jW[PIS=^^ZDM1
+IhZR4Z?em<H9Rcz_dn]_eh3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1529500190
+Z2 8final_project.vo
+Z3 Ffinal_project.vo
+Z4 L0 32
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1529500191.000000
+Z6 !s107 final_project.vo|
+Z7 !s90 -work|work|final_project.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@13410downto0@040
 vfsm
-Z1 !s110 1528942596
+Z10 !s110 1528942596
 !i10b 1
 !s100 cmz>G_dUE1]S0B848?11K0
 IQT>MCVY@FWO:2NieJ7Fg82
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+R1
 R0
 w1528942595
-8final_project.vo
-Ffinal_project.vo
-L0 32
-Z3 OV;L;10.5b;63
+R2
+R3
+R4
+R5
 r1
 !s85 0
 31
-Z4 !s108 1528942596.000000
-!s107 final_project.vo|
-!s90 -work|work|final_project.vo|
+Z11 !s108 1528942596.000000
+R6
+R7
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+R8
+R9
 vfsm_vlg_vec_tst
-R1
+R10
 !i10b 1
 !s100 H0Ad<Z1o>]T?kB:=38RLJ1
 IU5M8cnD9Bz>W^Pb0II1mW2
-R2
+R1
 R0
 w1528942594
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-L0 30
-R3
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+Z14 L0 30
+R5
 r1
 !s85 0
 31
-R4
+R11
 !s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
+R8
+R9
+vL10downto0
+Z16 !s110 1529500666
+!i10b 1
+!s100 mERUnPn`3S@zYKn2zL7`=0
+IERhTWlFZJO0ho_eAGbjK71
+R1
+R0
+w1529500665
+R2
+R3
+R4
 R5
+r1
+!s85 0
+31
+Z17 !s108 1529500666.000000
 R6
+R7
+!i113 1
+R8
+R9
+n@l10downto0
+vL10downto0_vlg_vec_tst
+R16
+!i10b 1
+!s100 YHLPBf>Q26AGdFBST=]HN3
+IAB@;=olb[BiGgZGPX08110
+R1
+R0
+w1529500664
+R12
+R13
+R14
+R5
+r1
+!s85 0
+31
+R17
+!s107 Waveform.vwf.vt|
+R15
+!i113 1
+R8
+R9
+n@l10downto0_vlg_vec_tst
