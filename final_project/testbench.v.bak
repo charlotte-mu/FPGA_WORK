@@ -1,0 +1,76 @@
+`timescale 1ns/10ps
+
+module testbench;
+reg ck,clr,stop,ctlr;
+reg SW2,SW3,SW4,SW5,SW6,SW7,SW8,SW9;
+reg KEY1,KEY2;
+
+wire LEDR0,LEDR1,LEDR2,LEDR3,LEDR4;
+
+
+top final_project(
+	ck(ck),
+	clr(clr),
+	stop(stop),
+	ctlr(ctlr),
+	SW2(SW2),
+	SW3(SW3),
+	SW4(SW4),
+	SW5(SW5),
+	SW6(SW6),
+	SW7(SW7),
+	SW8(SW8),
+	SW9(SW9),
+	LEDR0(LEDR0),
+	LEDR1(LEDR1),
+	LEDR2(LEDR2),
+	LEDR3(LEDR3),
+	LEDR4(LEDR4)
+);
+
+
+always 
+	#10 ck = ~ck;
+
+initial 
+begin
+				ck = 1'b0;
+				clr = 1'b1;
+				stop = 1'b0;
+				ctlr = 1'b0;
+				SW2 = 1'b0;
+				SW3 = 1'b0;
+				SW4 = 1'b0;
+				SW5 = 1'b0;
+				SW6 = 1'b0;
+				SW7 = 1'b0;
+				SW8 = 1'b0;
+				SW9 = 1'b0;
+	#200		
+				clr = 1'b1;
+				stop = 1'b0;
+				ctlr = 1'b1;
+				SW2 = 1'b0;
+				SW3 = 1'b0;
+				SW4 = 1'b0;
+				SW5 = 1'b0;
+				SW6 = 1'b0;
+				SW7 = 1'b0;
+				SW8 = 1'b0;
+				SW9 = 1'b0;
+	#200		
+				clr = 1'b1;
+				stop = 1'b0;
+				ctlr = 1'b1;
+				SW2 = 1'b0;
+				SW3 = 1'b0;
+				SW4 = 1'b0;
+				SW5 = 1'b0;
+				SW6 = 1'b0;
+				SW7 = 1'b0;
+				SW8 = 1'b0;
+				SW9 = 1'b0;
+	#300 	$finish;
+end
+
+endmodule

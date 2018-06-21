@@ -36,131 +36,131 @@
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[6]",
+					"name" : "L3bit_L0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[5]",
+					"name" : "L3bit_L0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[4]",
+					"name" : "L3bit_L0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[3]",
+					"name" : "L3bit_L0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[2]",
+					"name" : "L3bit_L0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[1]",
+					"name" : "L3bit_L0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "3bit_L0[0]",
+					"name" : "L3bit_L0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[6]",
+					"name" : "L4bit_L0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[5]",
+					"name" : "L4bit_L0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[4]",
+					"name" : "L4bit_L0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[3]",
+					"name" : "L4bit_L0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[2]",
+					"name" : "L4bit_L0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[1]",
+					"name" : "L4bit_L0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L0[0]",
+					"name" : "L4bit_L0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L1[6]",
+					"name" : "L4bit_L1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L1[5]",
+					"name" : "L4bit_L1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L1[4]",
+					"name" : "L4bit_L1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L1[3]",
+					"name" : "L4bit_L1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "4bit_L1[0]",
+					"name" : "L4bit_L1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[6]",
+					"name" : "L5bit_L0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[5]",
+					"name" : "L5bit_L0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[4]",
+					"name" : "L5bit_L0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[3]",
+					"name" : "L5bit_L0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[2]",
+					"name" : "L5bit_L0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[1]",
+					"name" : "L5bit_L0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L0[0]",
+					"name" : "L5bit_L0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[6]",
+					"name" : "L5bit_L1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[5]",
+					"name" : "L5bit_L1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[4]",
+					"name" : "L5bit_L1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[3]",
+					"name" : "L5bit_L1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[2]",
+					"name" : "L5bit_L1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "5bit_L1[0]",
+					"name" : "L5bit_L1[0]",
 					"strict" : false
 				},
 				{
@@ -188,11 +188,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW5",
+					"name" : "SW9",
 					"strict" : false
 				},
 				{
-					"name" : "SW9",
+					"name" : "SW5",
 					"strict" : false
 				},
 				{
@@ -212,11 +212,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "ck",
+					"name" : "stop",
 					"strict" : false
 				},
 				{
-					"name" : "stop",
+					"name" : "ck",
 					"strict" : false
 				}
 			]

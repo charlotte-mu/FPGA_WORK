@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA_WORK/final_project/simulation/modelsim
+vclk
+Z1 !s110 1529551965
+!i10b 1
+!s100 7mG?]8C<E0PGMe4PLed0m0
+IWM1[nD@MgJf3ib86<>>Ha0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1529376740
+8D:/FPGA_WORK/final_project/clk.v
+FD:/FPGA_WORK/final_project/clk.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1529551965.000000
+!s107 D:/FPGA_WORK/final_project/clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/clk.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/FPGA_WORK/final_project
+Z7 tCvgOpt 0
+vLED7
+R1
+!i10b 1
+!s100 Mc:8Mmm4TJ7jIiEnm8XOE1
+ISUd2M@z24Foec_AoViEMW2
+R2
+R0
+Z8 w1529547703
+8D:/FPGA_WORK/final_project/LED7.v
+FD:/FPGA_WORK/final_project/LED7.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/FPGA_WORK/final_project/LED7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/LED7.v|
+!i113 1
+R5
+R6
+R7
+n@l@e@d7
+vLED7_5bit
+R1
+!i10b 1
+!s100 Jcfc7zSZh9CcFL[d:YhHb2
+Iha9EI2NgHEoaaR_Rf:WPT2
+R2
+R0
+R8
+8D:/FPGA_WORK/final_project/LED7_5bit.v
+FD:/FPGA_WORK/final_project/LED7_5bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/FPGA_WORK/final_project/LED7_5bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/LED7_5bit.v|
+!i113 1
+R5
+R6
+R7
+n@l@e@d7_5bit
+vtestbench
+R1
+!i10b 1
+!s100 aL3DdL5EOIC?<P=>LD57S0
+I`M:UY9_RYJ`fJef>[FmFD1
+R2
+R0
+w1529551894
+8D:/FPGA_WORK/final_project/testbench.v
+FD:/FPGA_WORK/final_project/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/FPGA_WORK/final_project/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/testbench.v|
+!i113 1
+R5
+R6
+R7
