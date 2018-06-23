@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/FPGA_WORK/final_project/simulation/modelsim
 vclk
-Z1 !s110 1529551965
+Z1 !s110 1529663896
 !i10b 1
 !s100 7mG?]8C<E0PGMe4PLed0m0
 IWM1[nD@MgJf3ib86<>>Ha0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1529551965.000000
+Z4 !s108 1529663896.000000
 !s107 D:/FPGA_WORK/final_project/clk.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/clk.v|
 !i113 1
@@ -79,11 +79,11 @@ n@l@e@d7_5bit
 vtestbench
 R1
 !i10b 1
-!s100 aL3DdL5EOIC?<P=>LD57S0
-I`M:UY9_RYJ`fJef>[FmFD1
+!s100 gT=L;G6KM5^IT;PR8;jR]0
+IN=dZDF7n`2Z3kgCaX9j1m0
 R2
 R0
-w1529551894
+w1529663877
 8D:/FPGA_WORK/final_project/testbench.v
 FD:/FPGA_WORK/final_project/testbench.v
 L0 3

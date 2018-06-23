@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY finalproject
+set_global_assignment -name TOP_LEVEL_ENTITY final_project
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:33:55  JUNE 11, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.2 Lite Edition"
@@ -85,7 +85,6 @@ set_global_assignment -name BDF_FILE work3_1.bdf
 set_global_assignment -name VERILOG_FILE clk.v
 set_global_assignment -name VERILOG_FILE LED7.v
 set_global_assignment -name BDF_FILE fsm.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name BDF_FILE Lab1_2.bdf
 set_global_assignment -name BDF_FILE ck1.bdf
 set_global_assignment -name BDF_FILE lab4.bdf
@@ -96,10 +95,6 @@ set_global_assignment -name BDF_FILE L2to1.bdf
 set_global_assignment -name BDF_FILE L4to1.bdf
 set_global_assignment -name BDF_FILE L4bit_add.bdf
 set_global_assignment -name VERILOG_FILE testbench.v
-set_global_assignment -name BDF_FILE finalproject.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY ON -section_id eda_simulation
 set_location_assignment PIN_G18 -to L3bit_L0[6]
 set_location_assignment PIN_F22 -to L3bit_L0[5]
@@ -136,4 +131,9 @@ set_location_assignment PIN_AH17 -to L5bit_L1[3]
 set_location_assignment PIN_AF17 -to L5bit_L1[2]
 set_location_assignment PIN_AG18 -to L5bit_L1[1]
 set_location_assignment PIN_AA14 -to L5bit_L1[0]
+set_global_assignment -name BDF_FILE final_project.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

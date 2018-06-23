@@ -36,23 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "L3bit_L0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "L3bit_L0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "L3bit_L0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "L3bit_L0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "L3bit_L0[2]",
+					"name" : "L3bit_L0[0]",
 					"strict" : false
 				},
 				{
@@ -60,7 +44,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "L3bit_L0[0]",
+					"name" : "L3bit_L0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "L3bit_L0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "L3bit_L0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "L3bit_L0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "L3bit_L0[6]",
 					"strict" : false
 				},
 				{
@@ -164,11 +164,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW2",
+					"name" : "SW3",
 					"strict" : false
 				},
 				{
-					"name" : "SW6",
+					"name" : "SW2",
 					"strict" : false
 				},
 				{
@@ -176,7 +176,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW3",
+					"name" : "SW6",
 					"strict" : false
 				},
 				{
@@ -188,11 +188,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW9",
+					"name" : "SW5",
 					"strict" : false
 				},
 				{
-					"name" : "SW5",
+					"name" : "SW9",
 					"strict" : false
 				},
 				{
@@ -200,11 +200,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clr",
+					"name" : "KEY2",
 					"strict" : false
 				},
 				{
-					"name" : "KEY2",
+					"name" : "clr",
 					"strict" : false
 				},
 				{
@@ -212,11 +212,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "stop",
+					"name" : "ck",
 					"strict" : false
 				},
 				{
-					"name" : "ck",
+					"name" : "stop",
 					"strict" : false
 				}
 			]

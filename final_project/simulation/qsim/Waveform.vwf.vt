@@ -19,15 +19,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/21/2018 11:50:13"
+// Generated on "06/22/2018 19:21:07"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          finalproject
+// Verilog Test Bench (with test vectors) for design :                          final_project
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module finalproject_vlg_vec_tst();
+module final_project_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg ck;
@@ -60,7 +60,7 @@ wire LEDR3;
 wire LEDR4;
 
 // assign statements (if any)                          
-finalproject i1 (
+final_project i1 (
 // port map - connection between master ports and signals/registers   
 	.ck(ck),
 	.clr(clr),
@@ -106,21 +106,28 @@ end
 // stop
 initial
 begin
-	stop = 1'b0;
-	stop = #200000 1'b1;
-	stop = #200000 1'b0;
+	stop = 1'b1;
+	stop = #400000 1'b0;
+	stop = #180000 1'b1;
+	stop = #20000 1'b0;
+	stop = #300000 1'b1;
+	stop = #20000 1'b0;
+	stop = #100000 1'b1;
+	stop = #20000 1'b0;
 end 
 
 // ctrl
 initial
 begin
 	ctrl = 1'b0;
+	ctrl = #200000 1'b1;
+	ctrl = #200000 1'b0;
 end 
 
 // clr
 initial
 begin
-	clr = 1'b0;
+	clr = 1'b1;
 end 
 
 // KEY1
@@ -132,55 +139,93 @@ end
 // KEY2
 initial
 begin
-	KEY2 = 1'b0;
+	KEY2 = 1'b1;
 end 
 
 // SW2
 initial
 begin
 	SW2 = 1'b0;
+	SW2 = #420000 1'b1;
+	SW2 = #40000 1'b0;
+	SW2 = #460000 1'b1;
+	SW2 = #20000 1'b0;
+	SW2 = #60000 1'b1;
+	SW2 = #20000 1'b0;
 end 
 
 // SW3
 initial
 begin
 	SW3 = 1'b0;
+	SW3 = #480000 1'b1;
+	SW3 = #40000 1'b0;
+	SW3 = #20000 1'b1;
+	SW3 = #40000 1'b0;
+	SW3 = #360000 1'b1;
+	SW3 = #20000 1'b0;
+	SW3 = #40000 1'b1;
+	SW3 = #20000 1'b0;
 end 
 
 // SW4
 initial
 begin
 	SW4 = 1'b0;
+	SW4 = #420000 1'b1;
+	SW4 = #40000 1'b0;
+	SW4 = #80000 1'b1;
+	SW4 = #40000 1'b0;
+	SW4 = #380000 1'b1;
+	SW4 = #20000 1'b0;
+	SW4 = #20000 1'b1;
+	SW4 = #20000 1'b0;
 end 
 
 // SW5
 initial
 begin
 	SW5 = 1'b0;
+	SW5 = #980000 1'b1;
+	SW5 = #40000 1'b0;
 end 
 
 // SW6
 initial
 begin
 	SW6 = 1'b0;
+	SW6 = #920000 1'b1;
+	SW6 = #20000 1'b0;
+	SW6 = #60000 1'b1;
+	SW6 = #20000 1'b0;
 end 
 
 // SW7
 initial
 begin
 	SW7 = 1'b0;
+	SW7 = #940000 1'b1;
+	SW7 = #20000 1'b0;
+	SW7 = #40000 1'b1;
+	SW7 = #20000 1'b0;
 end 
 
 // SW8
 initial
 begin
 	SW8 = 1'b0;
+	SW8 = #960000 1'b1;
+	SW8 = #20000 1'b0;
+	SW8 = #20000 1'b1;
+	SW8 = #20000 1'b0;
 end 
 
 // SW9
 initial
 begin
 	SW9 = 1'b0;
+	SW9 = #980000 1'b1;
+	SW9 = #40000 1'b0;
 end 
 endmodule
 

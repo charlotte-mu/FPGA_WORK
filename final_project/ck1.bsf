@@ -32,6 +32,13 @@ agreement for further details.
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
+		(pt 0 48)
+		(input)
+		(text "clr" (rect 0 0 14 19)(font "Intel Clear" (font_size 8)))
+		(text "clr" (rect 21 43 35 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
 		(pt 96 32)
 		(output)
 		(text "CK1" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))

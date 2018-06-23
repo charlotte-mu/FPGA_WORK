@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/FPGA_WORK/final_project/simulation/modelsim
 vfinalproject
-Z1 !s110 1529552940
+Z1 !s110 1529663738
 !i10b 1
-!s100 L7zegz7WS=]BOj2J?A`=01
-I:R=_9NEzPM1J]`07Ha69U0
+!s100 9cBa<P?Un0@CzfgZ_L5lW0
+I19A^=m?5[D0nzRG76n<Ck3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1529552933
+Z3 w1529663732
 Z4 8final_project.vo
 Z5 Ffinal_project.vo
 L0 32
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1529552939.000000
+Z7 !s108 1529663738.000000
 Z8 !s107 final_project.vo|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|final_project.vo|
 !i113 1
@@ -33,14 +33,14 @@ Z12 tCvgOpt 0
 vhard_block
 R1
 !i10b 1
-!s100 Y@<e=SQV3TbkT=_zkDj>]1
-Ij7k9FiJWaWL^mOG?>6id_2
+!s100 In=bdoDYP_AHl38m1:?Po1
+Ih]S[OFm3f2RoiQ]cT^_Lk0
 R2
 R0
 R3
 R4
 R5
-L0 5715
+L0 5751
 R6
 r1
 !s85 0
@@ -55,11 +55,11 @@ R12
 vtestbench
 R1
 !i10b 1
-!s100 MGfE7F?KF49UXQk6a>4F>2
-I7MmL3jS;1W:2W[Kb>4@R80
+!s100 ?kc?0Vbk3PXHzEES<dEzk2
+I<eOjlTTScUcjG=2m;64NY2
 R2
 R0
-w1529552903
+w1529663700
 8D:/FPGA_WORK/final_project/testbench.v
 FD:/FPGA_WORK/final_project/testbench.v
 L0 3
@@ -67,7 +67,7 @@ R6
 r1
 !s85 0
 31
-!s108 1529552940.000000
+R7
 !s107 D:/FPGA_WORK/final_project/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_WORK/final_project|D:/FPGA_WORK/final_project/testbench.v|
 !i113 1

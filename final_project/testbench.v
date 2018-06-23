@@ -14,7 +14,7 @@ wire [2:0]LEDG;
 //wire [6:0]L3bit_L0_w;
 
 
-finalproject top(
+final_project top(
 	.ck(ck_w),
 	.clr(clr_w),
 	.stop(stop_w),
@@ -50,7 +50,7 @@ always
 
 initial 
 begin
-				ck_w = 1'b0;
+				ck_w = 1'b1;
 				clr_w = 1'b1;
 				stop_w = 1'b1;
 				ctrl_w = 1'b0;
@@ -78,7 +78,7 @@ begin
 				SW9_w = 1'b0;
 				KEY1_w = 1'b1;
 				KEY2_w = 1'b1;
-	#200		
+	#220		
 				clr_w = 1'b1;
 				stop_w = 1'b1;
 				ctrl_w = 1'b0;
