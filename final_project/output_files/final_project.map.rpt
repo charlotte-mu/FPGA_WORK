@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Fri Jun 22 21:00:43 2018
+Sat Jun 23 17:55:37 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 22 21:00:43 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 23 17:55:37 2018       ;
 ; Quartus Prime Version              ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                      ; final_project                               ;
 ; Top-level Entity Name              ; final_project                               ;
@@ -152,16 +152,16 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -304,7 +304,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -314,10 +314,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Fri Jun 22 21:00:31 2018
+    Info: Processing started: Sat Jun 23 17:55:20 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_project -c final_project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file work3_1.bdf
     Info (12023): Found entity 1: work3_1
 Info (12021): Found 1 design units, including 1 entities, in source file clk.v
@@ -349,6 +349,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
 Info (12021): Found 1 design units, including 1 entities, in source file final_project.bdf
     Info (12023): Found entity 1: final_project
 Info (12127): Elaborating entity "final_project" for the top level hierarchy
+Warning (275008): Primitive "JKFF" of instance "inst11" not used
+Warning (275008): Primitive "VCC" of instance "inst13" not used
 Warning (275008): Primitive "AND2" of instance "inst4" not used
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:inst2"
 Info (12128): Elaborating entity "L2to1" for hierarchy "fsm:inst2|L2to1:inst3"
@@ -382,10 +384,10 @@ Info (21057): Implemented 231 device resources after synthesis - the final resou
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 43 output pins
     Info (21061): Implemented 174 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Fri Jun 22 21:00:43 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Sat Jun 23 17:55:37 2018
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
 
 
