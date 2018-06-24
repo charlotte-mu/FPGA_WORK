@@ -191,6 +191,7 @@ q <= inst.DB_MAX_OUTPUT_PORT_TYPE
 r => inst6.IN0
 cp => inst66.IN0
 s => inst5.IN0
+Q_ <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |final_project|L4to1:inst28

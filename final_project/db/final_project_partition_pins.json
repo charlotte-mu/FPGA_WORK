@@ -184,6 +184,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "KEY1",
+					"strict" : false
+				},
+				{
 					"name" : "SW8",
 					"strict" : false
 				},
@@ -205,10 +209,6 @@
 				},
 				{
 					"name" : "clr",
-					"strict" : false
-				},
-				{
-					"name" : "KEY1",
 					"strict" : false
 				},
 				{
