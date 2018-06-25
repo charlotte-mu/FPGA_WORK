@@ -3,7 +3,7 @@ $comment
 		vcd file final_project.msim.vcd -direction
 $end
 $date
-	Mon Jun 25 00:29:19 2018
+	Mon Jun 25 09:21:56 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -34,34 +34,34 @@ $var wire 1 2 L3bit_L0 [3] $end
 $var wire 1 3 L3bit_L0 [4] $end
 $var wire 1 4 L3bit_L0 [5] $end
 $var wire 1 5 L3bit_L0 [6] $end
-$var wire 1 6 L4bit_L0 [6] $end
-$var wire 1 7 L4bit_L0 [5] $end
-$var wire 1 8 L4bit_L0 [4] $end
+$var wire 1 6 L4bit_L0 [0] $end
+$var wire 1 7 L4bit_L0 [1] $end
+$var wire 1 8 L4bit_L0 [2] $end
 $var wire 1 9 L4bit_L0 [3] $end
-$var wire 1 : L4bit_L0 [2] $end
-$var wire 1 ; L4bit_L0 [1] $end
-$var wire 1 < L4bit_L0 [0] $end
-$var wire 1 = L4bit_L1 [6] $end
-$var wire 1 > L4bit_L1 [5] $end
-$var wire 1 ? L4bit_L1 [4] $end
+$var wire 1 : L4bit_L0 [4] $end
+$var wire 1 ; L4bit_L0 [5] $end
+$var wire 1 < L4bit_L0 [6] $end
+$var wire 1 = L4bit_L1 [0] $end
+$var wire 1 > L4bit_L1 [1] $end
+$var wire 1 ? L4bit_L1 [2] $end
 $var wire 1 @ L4bit_L1 [3] $end
-$var wire 1 A L4bit_L1 [2] $end
-$var wire 1 B L4bit_L1 [1] $end
-$var wire 1 C L4bit_L1 [0] $end
-$var wire 1 D L5bit_L0 [6] $end
-$var wire 1 E L5bit_L0 [5] $end
-$var wire 1 F L5bit_L0 [4] $end
+$var wire 1 A L4bit_L1 [4] $end
+$var wire 1 B L4bit_L1 [5] $end
+$var wire 1 C L4bit_L1 [6] $end
+$var wire 1 D L5bit_L0 [0] $end
+$var wire 1 E L5bit_L0 [1] $end
+$var wire 1 F L5bit_L0 [2] $end
 $var wire 1 G L5bit_L0 [3] $end
-$var wire 1 H L5bit_L0 [2] $end
-$var wire 1 I L5bit_L0 [1] $end
-$var wire 1 J L5bit_L0 [0] $end
-$var wire 1 K L5bit_L1 [6] $end
-$var wire 1 L L5bit_L1 [5] $end
-$var wire 1 M L5bit_L1 [4] $end
+$var wire 1 H L5bit_L0 [4] $end
+$var wire 1 I L5bit_L0 [5] $end
+$var wire 1 J L5bit_L0 [6] $end
+$var wire 1 K L5bit_L1 [0] $end
+$var wire 1 L L5bit_L1 [1] $end
+$var wire 1 M L5bit_L1 [2] $end
 $var wire 1 N L5bit_L1 [3] $end
-$var wire 1 O L5bit_L1 [2] $end
-$var wire 1 P L5bit_L1 [1] $end
-$var wire 1 Q L5bit_L1 [0] $end
+$var wire 1 O L5bit_L1 [4] $end
+$var wire 1 P L5bit_L1 [5] $end
+$var wire 1 Q L5bit_L1 [6] $end
 $var wire 1 R LEDG0 $end
 $var wire 1 S LEDG1 $end
 $var wire 1 T LEDG2 $end
@@ -93,34 +93,34 @@ $var wire 1 k L3bit_L0[3]~output_o $end
 $var wire 1 l L3bit_L0[4]~output_o $end
 $var wire 1 m L3bit_L0[5]~output_o $end
 $var wire 1 n L3bit_L0[6]~output_o $end
-$var wire 1 o L4bit_L0[6]~output_o $end
-$var wire 1 p L4bit_L0[5]~output_o $end
-$var wire 1 q L4bit_L0[4]~output_o $end
+$var wire 1 o L4bit_L0[0]~output_o $end
+$var wire 1 p L4bit_L0[1]~output_o $end
+$var wire 1 q L4bit_L0[2]~output_o $end
 $var wire 1 r L4bit_L0[3]~output_o $end
-$var wire 1 s L4bit_L0[2]~output_o $end
-$var wire 1 t L4bit_L0[1]~output_o $end
-$var wire 1 u L4bit_L0[0]~output_o $end
-$var wire 1 v L4bit_L1[6]~output_o $end
-$var wire 1 w L4bit_L1[5]~output_o $end
-$var wire 1 x L4bit_L1[4]~output_o $end
+$var wire 1 s L4bit_L0[4]~output_o $end
+$var wire 1 t L4bit_L0[5]~output_o $end
+$var wire 1 u L4bit_L0[6]~output_o $end
+$var wire 1 v L4bit_L1[0]~output_o $end
+$var wire 1 w L4bit_L1[1]~output_o $end
+$var wire 1 x L4bit_L1[2]~output_o $end
 $var wire 1 y L4bit_L1[3]~output_o $end
-$var wire 1 z L4bit_L1[2]~output_o $end
-$var wire 1 { L4bit_L1[1]~output_o $end
-$var wire 1 | L4bit_L1[0]~output_o $end
-$var wire 1 } L5bit_L0[6]~output_o $end
-$var wire 1 ~ L5bit_L0[5]~output_o $end
-$var wire 1 !! L5bit_L0[4]~output_o $end
+$var wire 1 z L4bit_L1[4]~output_o $end
+$var wire 1 { L4bit_L1[5]~output_o $end
+$var wire 1 | L4bit_L1[6]~output_o $end
+$var wire 1 } L5bit_L0[0]~output_o $end
+$var wire 1 ~ L5bit_L0[1]~output_o $end
+$var wire 1 !! L5bit_L0[2]~output_o $end
 $var wire 1 "! L5bit_L0[3]~output_o $end
-$var wire 1 #! L5bit_L0[2]~output_o $end
-$var wire 1 $! L5bit_L0[1]~output_o $end
-$var wire 1 %! L5bit_L0[0]~output_o $end
-$var wire 1 &! L5bit_L1[6]~output_o $end
-$var wire 1 '! L5bit_L1[5]~output_o $end
-$var wire 1 (! L5bit_L1[4]~output_o $end
+$var wire 1 #! L5bit_L0[4]~output_o $end
+$var wire 1 $! L5bit_L0[5]~output_o $end
+$var wire 1 %! L5bit_L0[6]~output_o $end
+$var wire 1 &! L5bit_L1[0]~output_o $end
+$var wire 1 '! L5bit_L1[1]~output_o $end
+$var wire 1 (! L5bit_L1[2]~output_o $end
 $var wire 1 )! L5bit_L1[3]~output_o $end
-$var wire 1 *! L5bit_L1[2]~output_o $end
-$var wire 1 +! L5bit_L1[1]~output_o $end
-$var wire 1 ,! L5bit_L1[0]~output_o $end
+$var wire 1 *! L5bit_L1[4]~output_o $end
+$var wire 1 +! L5bit_L1[5]~output_o $end
+$var wire 1 ,! L5bit_L1[6]~output_o $end
 $var wire 1 -! ck~input_o $end
 $var wire 1 .! stop~input_o $end
 $var wire 1 /! inst4~combout $end

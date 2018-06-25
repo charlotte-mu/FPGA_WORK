@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition"
 
-// DATE "06/25/2018 00:29:15"
+// DATE "06/25/2018 09:21:53"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -80,10 +80,10 @@ output 	LEDR2;
 output 	LEDR3;
 output 	LEDR4;
 output 	[0:6] L3bit_L0;
-output 	[6:0] L4bit_L0;
-output 	[6:0] L4bit_L1;
-output 	[6:0] L5bit_L0;
-output 	[6:0] L5bit_L1;
+output 	[0:6] L4bit_L0;
+output 	[0:6] L4bit_L1;
+output 	[0:6] L5bit_L0;
+output 	[0:6] L5bit_L1;
 
 wire gnd;
 wire vcc;
@@ -111,34 +111,34 @@ wire \L3bit_L0[3]~output_o ;
 wire \L3bit_L0[4]~output_o ;
 wire \L3bit_L0[5]~output_o ;
 wire \L3bit_L0[6]~output_o ;
-wire \L4bit_L0[6]~output_o ;
-wire \L4bit_L0[5]~output_o ;
-wire \L4bit_L0[4]~output_o ;
-wire \L4bit_L0[3]~output_o ;
-wire \L4bit_L0[2]~output_o ;
-wire \L4bit_L0[1]~output_o ;
 wire \L4bit_L0[0]~output_o ;
-wire \L4bit_L1[6]~output_o ;
-wire \L4bit_L1[5]~output_o ;
-wire \L4bit_L1[4]~output_o ;
-wire \L4bit_L1[3]~output_o ;
-wire \L4bit_L1[2]~output_o ;
-wire \L4bit_L1[1]~output_o ;
+wire \L4bit_L0[1]~output_o ;
+wire \L4bit_L0[2]~output_o ;
+wire \L4bit_L0[3]~output_o ;
+wire \L4bit_L0[4]~output_o ;
+wire \L4bit_L0[5]~output_o ;
+wire \L4bit_L0[6]~output_o ;
 wire \L4bit_L1[0]~output_o ;
-wire \L5bit_L0[6]~output_o ;
-wire \L5bit_L0[5]~output_o ;
-wire \L5bit_L0[4]~output_o ;
-wire \L5bit_L0[3]~output_o ;
-wire \L5bit_L0[2]~output_o ;
-wire \L5bit_L0[1]~output_o ;
+wire \L4bit_L1[1]~output_o ;
+wire \L4bit_L1[2]~output_o ;
+wire \L4bit_L1[3]~output_o ;
+wire \L4bit_L1[4]~output_o ;
+wire \L4bit_L1[5]~output_o ;
+wire \L4bit_L1[6]~output_o ;
 wire \L5bit_L0[0]~output_o ;
-wire \L5bit_L1[6]~output_o ;
-wire \L5bit_L1[5]~output_o ;
-wire \L5bit_L1[4]~output_o ;
-wire \L5bit_L1[3]~output_o ;
-wire \L5bit_L1[2]~output_o ;
-wire \L5bit_L1[1]~output_o ;
+wire \L5bit_L0[1]~output_o ;
+wire \L5bit_L0[2]~output_o ;
+wire \L5bit_L0[3]~output_o ;
+wire \L5bit_L0[4]~output_o ;
+wire \L5bit_L0[5]~output_o ;
+wire \L5bit_L0[6]~output_o ;
 wire \L5bit_L1[0]~output_o ;
+wire \L5bit_L1[1]~output_o ;
+wire \L5bit_L1[2]~output_o ;
+wire \L5bit_L1[3]~output_o ;
+wire \L5bit_L1[4]~output_o ;
+wire \L5bit_L1[5]~output_o ;
+wire \L5bit_L1[6]~output_o ;
 wire \ck~input_o ;
 wire \stop~input_o ;
 wire \inst4~combout ;
@@ -439,40 +439,40 @@ defparam \L3bit_L0[6]~output .bus_hold = "false";
 defparam \L3bit_L0[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[6]~output (
+cycloneive_io_obuf \L4bit_L0[0]~output (
 	.i(\inst27|WideOr13~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[6]~output_o ),
+	.o(\L4bit_L0[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[6]~output .bus_hold = "false";
-defparam \L4bit_L0[6]~output .open_drain_output = "false";
+defparam \L4bit_L0[0]~output .bus_hold = "false";
+defparam \L4bit_L0[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[5]~output (
+cycloneive_io_obuf \L4bit_L0[1]~output (
 	.i(\inst27|WideOr14~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[5]~output_o ),
+	.o(\L4bit_L0[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[5]~output .bus_hold = "false";
-defparam \L4bit_L0[5]~output .open_drain_output = "false";
+defparam \L4bit_L0[1]~output .bus_hold = "false";
+defparam \L4bit_L0[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[4]~output (
+cycloneive_io_obuf \L4bit_L0[2]~output (
 	.i(!\inst27|WideOr15~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[4]~output_o ),
+	.o(\L4bit_L0[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[4]~output .bus_hold = "false";
-defparam \L4bit_L0[4]~output .open_drain_output = "false";
+defparam \L4bit_L0[2]~output .bus_hold = "false";
+defparam \L4bit_L0[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
 cycloneive_io_obuf \L4bit_L0[3]~output (
@@ -487,76 +487,76 @@ defparam \L4bit_L0[3]~output .bus_hold = "false";
 defparam \L4bit_L0[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[2]~output (
+cycloneive_io_obuf \L4bit_L0[4]~output (
 	.i(\inst27|data0.0010~2_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[2]~output_o ),
+	.o(\L4bit_L0[4]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[2]~output .bus_hold = "false";
-defparam \L4bit_L0[2]~output .open_drain_output = "false";
+defparam \L4bit_L0[4]~output .bus_hold = "false";
+defparam \L4bit_L0[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[1]~output (
+cycloneive_io_obuf \L4bit_L0[5]~output (
 	.i(\inst27|L0[5]~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[1]~output_o ),
+	.o(\L4bit_L0[5]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[1]~output .bus_hold = "false";
-defparam \L4bit_L0[1]~output .open_drain_output = "false";
+defparam \L4bit_L0[5]~output .bus_hold = "false";
+defparam \L4bit_L0[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L0[0]~output (
+cycloneive_io_obuf \L4bit_L0[6]~output (
 	.i(\inst27|L0[6]~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L0[0]~output_o ),
+	.o(\L4bit_L0[6]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L0[0]~output .bus_hold = "false";
-defparam \L4bit_L0[0]~output .open_drain_output = "false";
+defparam \L4bit_L0[6]~output .bus_hold = "false";
+defparam \L4bit_L0[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[6]~output (
+cycloneive_io_obuf \L4bit_L1[0]~output (
 	.i(\inst2|inst13~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[6]~output_o ),
+	.o(\L4bit_L1[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[6]~output .bus_hold = "false";
-defparam \L4bit_L1[6]~output .open_drain_output = "false";
+defparam \L4bit_L1[0]~output .bus_hold = "false";
+defparam \L4bit_L1[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[5]~output (
+cycloneive_io_obuf \L4bit_L1[1]~output (
 	.i(\inst27|data1.0001~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[5]~output_o ),
+	.o(\L4bit_L1[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[5]~output .bus_hold = "false";
-defparam \L4bit_L1[5]~output .open_drain_output = "false";
+defparam \L4bit_L1[1]~output .bus_hold = "false";
+defparam \L4bit_L1[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[4]~output (
+cycloneive_io_obuf \L4bit_L1[2]~output (
 	.i(!\inst27|WideOr19~combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[4]~output_o ),
+	.o(\L4bit_L1[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[4]~output .bus_hold = "false";
-defparam \L4bit_L1[4]~output .open_drain_output = "false";
+defparam \L4bit_L1[2]~output .bus_hold = "false";
+defparam \L4bit_L1[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
 cycloneive_io_obuf \L4bit_L1[3]~output (
@@ -571,76 +571,76 @@ defparam \L4bit_L1[3]~output .bus_hold = "false";
 defparam \L4bit_L1[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[2]~output (
+cycloneive_io_obuf \L4bit_L1[4]~output (
 	.i(gnd),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[2]~output_o ),
+	.o(\L4bit_L1[4]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[2]~output .bus_hold = "false";
-defparam \L4bit_L1[2]~output .open_drain_output = "false";
+defparam \L4bit_L1[4]~output .bus_hold = "false";
+defparam \L4bit_L1[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[1]~output (
+cycloneive_io_obuf \L4bit_L1[5]~output (
 	.i(gnd),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[1]~output_o ),
+	.o(\L4bit_L1[5]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[1]~output .bus_hold = "false";
-defparam \L4bit_L1[1]~output .open_drain_output = "false";
+defparam \L4bit_L1[5]~output .bus_hold = "false";
+defparam \L4bit_L1[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L4bit_L1[0]~output (
+cycloneive_io_obuf \L4bit_L1[6]~output (
 	.i(\inst27|data1.0001~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L4bit_L1[0]~output_o ),
+	.o(\L4bit_L1[6]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L4bit_L1[0]~output .bus_hold = "false";
-defparam \L4bit_L1[0]~output .open_drain_output = "false";
+defparam \L4bit_L1[6]~output .bus_hold = "false";
+defparam \L4bit_L1[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[6]~output (
+cycloneive_io_obuf \L5bit_L0[0]~output (
 	.i(\inst23|WideOr13~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[6]~output_o ),
+	.o(\L5bit_L0[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[6]~output .bus_hold = "false";
-defparam \L5bit_L0[6]~output .open_drain_output = "false";
+defparam \L5bit_L0[0]~output .bus_hold = "false";
+defparam \L5bit_L0[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[5]~output (
+cycloneive_io_obuf \L5bit_L0[1]~output (
 	.i(\inst23|WideOr14~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[5]~output_o ),
+	.o(\L5bit_L0[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[5]~output .bus_hold = "false";
-defparam \L5bit_L0[5]~output .open_drain_output = "false";
+defparam \L5bit_L0[1]~output .bus_hold = "false";
+defparam \L5bit_L0[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[4]~output (
+cycloneive_io_obuf \L5bit_L0[2]~output (
 	.i(!\inst23|WideOr15~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[4]~output_o ),
+	.o(\L5bit_L0[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[4]~output .bus_hold = "false";
-defparam \L5bit_L0[4]~output .open_drain_output = "false";
+defparam \L5bit_L0[2]~output .bus_hold = "false";
+defparam \L5bit_L0[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
 cycloneive_io_obuf \L5bit_L0[3]~output (
@@ -655,76 +655,76 @@ defparam \L5bit_L0[3]~output .bus_hold = "false";
 defparam \L5bit_L0[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[2]~output (
+cycloneive_io_obuf \L5bit_L0[4]~output (
 	.i(\inst23|data0.0010~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[2]~output_o ),
+	.o(\L5bit_L0[4]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[2]~output .bus_hold = "false";
-defparam \L5bit_L0[2]~output .open_drain_output = "false";
+defparam \L5bit_L0[4]~output .bus_hold = "false";
+defparam \L5bit_L0[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[1]~output (
+cycloneive_io_obuf \L5bit_L0[5]~output (
 	.i(\inst23|L0[5]~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[1]~output_o ),
+	.o(\L5bit_L0[5]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[1]~output .bus_hold = "false";
-defparam \L5bit_L0[1]~output .open_drain_output = "false";
+defparam \L5bit_L0[5]~output .bus_hold = "false";
+defparam \L5bit_L0[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L0[0]~output (
+cycloneive_io_obuf \L5bit_L0[6]~output (
 	.i(\inst23|L0[6]~1_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L0[0]~output_o ),
+	.o(\L5bit_L0[6]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L0[0]~output .bus_hold = "false";
-defparam \L5bit_L0[0]~output .open_drain_output = "false";
+defparam \L5bit_L0[6]~output .bus_hold = "false";
+defparam \L5bit_L0[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[6]~output (
+cycloneive_io_obuf \L5bit_L1[0]~output (
 	.i(\inst23|WideOr17~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[6]~output_o ),
+	.o(\L5bit_L1[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[6]~output .bus_hold = "false";
-defparam \L5bit_L1[6]~output .open_drain_output = "false";
+defparam \L5bit_L1[0]~output .bus_hold = "false";
+defparam \L5bit_L1[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[5]~output (
+cycloneive_io_obuf \L5bit_L1[1]~output (
 	.i(\inst23|WideOr18~2_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[5]~output_o ),
+	.o(\L5bit_L1[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[5]~output .bus_hold = "false";
-defparam \L5bit_L1[5]~output .open_drain_output = "false";
+defparam \L5bit_L1[1]~output .bus_hold = "false";
+defparam \L5bit_L1[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[4]~output (
+cycloneive_io_obuf \L5bit_L1[2]~output (
 	.i(!\inst23|WideOr19~combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[4]~output_o ),
+	.o(\L5bit_L1[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[4]~output .bus_hold = "false";
-defparam \L5bit_L1[4]~output .open_drain_output = "false";
+defparam \L5bit_L1[2]~output .bus_hold = "false";
+defparam \L5bit_L1[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
 cycloneive_io_obuf \L5bit_L1[3]~output (
@@ -739,40 +739,40 @@ defparam \L5bit_L1[3]~output .bus_hold = "false";
 defparam \L5bit_L1[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[2]~output (
+cycloneive_io_obuf \L5bit_L1[4]~output (
 	.i(\inst23|data1.0010~2_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[2]~output_o ),
+	.o(\L5bit_L1[4]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[2]~output .bus_hold = "false";
-defparam \L5bit_L1[2]~output .open_drain_output = "false";
+defparam \L5bit_L1[4]~output .bus_hold = "false";
+defparam \L5bit_L1[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[1]~output (
+cycloneive_io_obuf \L5bit_L1[5]~output (
 	.i(gnd),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[1]~output_o ),
+	.o(\L5bit_L1[5]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[1]~output .bus_hold = "false";
-defparam \L5bit_L1[1]~output .open_drain_output = "false";
+defparam \L5bit_L1[5]~output .bus_hold = "false";
+defparam \L5bit_L1[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \L5bit_L1[0]~output (
+cycloneive_io_obuf \L5bit_L1[6]~output (
 	.i(\inst23|data1.0001~2_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\L5bit_L1[0]~output_o ),
+	.o(\L5bit_L1[6]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \L5bit_L1[0]~output .bus_hold = "false";
-defparam \L5bit_L1[0]~output .open_drain_output = "false";
+defparam \L5bit_L1[6]~output .bus_hold = "false";
+defparam \L5bit_L1[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
 cycloneive_io_ibuf \ck~input (
@@ -2620,60 +2620,60 @@ assign L3bit_L0[5] = \L3bit_L0[5]~output_o ;
 
 assign L3bit_L0[6] = \L3bit_L0[6]~output_o ;
 
-assign L4bit_L0[6] = \L4bit_L0[6]~output_o ;
-
-assign L4bit_L0[5] = \L4bit_L0[5]~output_o ;
-
-assign L4bit_L0[4] = \L4bit_L0[4]~output_o ;
-
-assign L4bit_L0[3] = \L4bit_L0[3]~output_o ;
-
-assign L4bit_L0[2] = \L4bit_L0[2]~output_o ;
+assign L4bit_L0[0] = \L4bit_L0[0]~output_o ;
 
 assign L4bit_L0[1] = \L4bit_L0[1]~output_o ;
 
-assign L4bit_L0[0] = \L4bit_L0[0]~output_o ;
+assign L4bit_L0[2] = \L4bit_L0[2]~output_o ;
 
-assign L4bit_L1[6] = \L4bit_L1[6]~output_o ;
+assign L4bit_L0[3] = \L4bit_L0[3]~output_o ;
 
-assign L4bit_L1[5] = \L4bit_L1[5]~output_o ;
+assign L4bit_L0[4] = \L4bit_L0[4]~output_o ;
 
-assign L4bit_L1[4] = \L4bit_L1[4]~output_o ;
+assign L4bit_L0[5] = \L4bit_L0[5]~output_o ;
 
-assign L4bit_L1[3] = \L4bit_L1[3]~output_o ;
-
-assign L4bit_L1[2] = \L4bit_L1[2]~output_o ;
-
-assign L4bit_L1[1] = \L4bit_L1[1]~output_o ;
+assign L4bit_L0[6] = \L4bit_L0[6]~output_o ;
 
 assign L4bit_L1[0] = \L4bit_L1[0]~output_o ;
 
-assign L5bit_L0[6] = \L5bit_L0[6]~output_o ;
+assign L4bit_L1[1] = \L4bit_L1[1]~output_o ;
 
-assign L5bit_L0[5] = \L5bit_L0[5]~output_o ;
+assign L4bit_L1[2] = \L4bit_L1[2]~output_o ;
 
-assign L5bit_L0[4] = \L5bit_L0[4]~output_o ;
+assign L4bit_L1[3] = \L4bit_L1[3]~output_o ;
 
-assign L5bit_L0[3] = \L5bit_L0[3]~output_o ;
+assign L4bit_L1[4] = \L4bit_L1[4]~output_o ;
 
-assign L5bit_L0[2] = \L5bit_L0[2]~output_o ;
+assign L4bit_L1[5] = \L4bit_L1[5]~output_o ;
 
-assign L5bit_L0[1] = \L5bit_L0[1]~output_o ;
+assign L4bit_L1[6] = \L4bit_L1[6]~output_o ;
 
 assign L5bit_L0[0] = \L5bit_L0[0]~output_o ;
 
-assign L5bit_L1[6] = \L5bit_L1[6]~output_o ;
+assign L5bit_L0[1] = \L5bit_L0[1]~output_o ;
 
-assign L5bit_L1[5] = \L5bit_L1[5]~output_o ;
+assign L5bit_L0[2] = \L5bit_L0[2]~output_o ;
 
-assign L5bit_L1[4] = \L5bit_L1[4]~output_o ;
+assign L5bit_L0[3] = \L5bit_L0[3]~output_o ;
 
-assign L5bit_L1[3] = \L5bit_L1[3]~output_o ;
+assign L5bit_L0[4] = \L5bit_L0[4]~output_o ;
 
-assign L5bit_L1[2] = \L5bit_L1[2]~output_o ;
+assign L5bit_L0[5] = \L5bit_L0[5]~output_o ;
+
+assign L5bit_L0[6] = \L5bit_L0[6]~output_o ;
+
+assign L5bit_L1[0] = \L5bit_L1[0]~output_o ;
 
 assign L5bit_L1[1] = \L5bit_L1[1]~output_o ;
 
-assign L5bit_L1[0] = \L5bit_L1[0]~output_o ;
+assign L5bit_L1[2] = \L5bit_L1[2]~output_o ;
+
+assign L5bit_L1[3] = \L5bit_L1[3]~output_o ;
+
+assign L5bit_L1[4] = \L5bit_L1[4]~output_o ;
+
+assign L5bit_L1[5] = \L5bit_L1[5]~output_o ;
+
+assign L5bit_L1[6] = \L5bit_L1[6]~output_o ;
 
 endmodule
